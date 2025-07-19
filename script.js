@@ -1,5 +1,5 @@
 const localModels = ['phi3:medium-128k', 'deepseek-r1:8b', 'qwen:1.8b'];
-const groqModels = ['mistral-saba-24b', 'gemma2-9b-it', 'llama-3.3-70b-versatile'];
+const groqModels = ['moonshotai/kimi-k2-instruct', 'gemma2-9b-it', 'llama-3.3-70b-versatile'];
 
 async function fetchFromModel(model, prompt, useGroq) {
   if (useGroq) {
