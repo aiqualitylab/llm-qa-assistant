@@ -1,0 +1,19 @@
+{
+  "name": "llm-qa-assistant",
+  "version": "1.0.0",
+  "description": "Compare outputs from 3 locally hosted LLMs using [Ollama](https://ollama.com).   This tool helps QA professionals validate AI outputs for test automation, bug triage, and more.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0"
+  }
+}
