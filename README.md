@@ -1,10 +1,12 @@
-# LLM QA Assistant – Compare & Validate QA Tasks with Local LLMs
+# QA Prompt Comparison (Local Or Cloud LLMs)
+
 
 
 Compare outputs from 3 locally hosted LLMs (via [Ollama](https://ollama.com)) **or** 3 cloud-hosted LLMs (via [Groq API](https://console.groq.com/)).
 This tool helps QA professionals validate AI outputs for test automation, bug triage, and more.
 
 ---
+
 
 
 ## 🚀 Features
