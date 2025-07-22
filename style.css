@@ -3,23 +3,57 @@ body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: #f4f6f8;
   color: #333;
-  margin: 20px auto;
-  max-width: 1000px;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  box-sizing: border-box;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.top-controls {
+  width: 100vw;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 0 0;
+  box-sizing: border-box;
+}
+
+.top-controls select,
+.top-controls textarea {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-checkbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 12px 0 0 0;
 }
 
 h2 {
   text-align: center;
+  margin-top: 32px;
   margin-bottom: 30px;
   color: #2c3e50;
 }
 
 select, textarea {
   width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 12px auto;
   font-size: 16px;
   padding: 10px;
-  margin-bottom: 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -38,6 +72,21 @@ button {
   transition: background 0.3s ease;
 }
 
+.copy-btn {
+  margin: 10px 0 0 0;
+  padding: 7px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.copy-btn:hover {
+  background-color: #218838;
+}
+
 button:hover {
   background-color: #005f99;
 }
@@ -46,17 +95,25 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100vw;
+  min-height: 60vh;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
 }
 
 .results div {
   flex: 1 1 30%;
-  min-width: 280px;
+  min-width: 340px;
+  max-width: 600px;
   background: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   padding: 16px;
   border-left: 5px solid #007acc;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 .results h3 {
@@ -74,9 +131,12 @@ pre {
   background: #f8f8f8;
   padding: 12px;
   border-radius: 4px;
-  height: 220px;
+  height: 100%;
+  min-height: 220px;
+  max-height: 320px;
   overflow-y: auto;
   font-size: 14px;
   line-height: 1.4;
   border: 1px solid #ddd;
+  margin-bottom: 10px;
 }
