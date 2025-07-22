@@ -115,12 +115,10 @@ Type a QA prompt and click "Compare Models".
 
 ## 📃 License
 
-MIT — free for personal or commercial use.
+This project is open source under the MIT License. You can use, modify, and share it freely.
 
 ---
 
-
 ## 🙌 Contribute
 
-Pull requests are welcome!  
-Open issues to suggest improvements or request more QA prompt templates.
+Contributions are welcome! If you have ideas or improvements, feel free to open an issue or submit a pull request.
