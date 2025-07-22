@@ -56,3 +56,16 @@ async function compare() {
   document.querySelectorAll('.results h3')[1].innerText = models[1];
   document.querySelectorAll('.results h3')[2].innerText = models[2];
 }
+
+// Copy response text to clipboard
+function copyResponse(outputId, btn) {
+  const text = document.getElementById(outputId).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.innerText = 'Copied!';
+    btn.style.backgroundColor = '#218838';
+    setTimeout(() => {
+      btn.innerText = 'Copy';
+      btn.style.backgroundColor = '';
+    }, 1200);
+  });
+}
