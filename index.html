@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LLM QA Assistant</title>
+  <title>QA Prompt Comparison (Local Or Cloud LLMs)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>QA Prompt Comparison (Local LLMs)</h2>
+  <h2>QA Prompt Comparison (Local Or Cloud LLMs)</h2>
 
-  <select id="qaTemplate">
-    <option value="">-- Select QA Prompt Template --</option>
-    <option value="Generate positive and negative test cases for ">Test Case Generator</option>
-    <option value="Convert this into Gherkin format: ">Gherkin Converter</option>
-    <option value="Explain this error message: ">Error Explainer</option>
-    <option value="Suggest assert statements for: ">Assertion Generator</option>
-  </select>
 
-  <textarea id="prompt" placeholder="Describe your QA task... (e.g. 'Login test case for invalid email')"></textarea>
-  <label style="display:block;margin:12px 0;">
-    <input type="checkbox" id="useGroq">
-    Use Groq-hosted LLMs (instead of local Ollama)
-  </label>
-  <button onclick="compare()">Compare Models</button>
+  <div class="top-controls">
+    <select id="qaTemplate">
+      <option value="">-- Select QA Prompt Template --</option>
+      <option value="Generate positive and negative test cases for ">Test Case Generator</option>
+      <option value="Convert this into Gherkin format: ">Gherkin Converter</option>
+      <option value="Explain this error message: ">Error Explainer</option>
+      <option value="Suggest assert statements for: ">Assertion Generator</option>
+    </select>
+    <textarea id="prompt" placeholder="Describe your QA task... (e.g. 'Login test case for invalid email')"></textarea>
+    <div class="center-checkbox">
+      <label>
+        <input type="checkbox" id="useGroq">
+        Use Groq-hosted LLMs (instead of local Ollama)
+      </label>
+    </div>
+    <button onclick="compare()">Compare Models</button>
+  </div>
 
   <div class="results">
     <div>
       <h3>phi3:medium-128k</h3>
       <pre id="outputA">Waiting...</pre>
+      <button class="copy-btn" onclick="copyResponse('outputA', this)">Copy</button>
     </div>
     <div>
       <h3>deepseek-r1:8b</h3>
       <pre id="outputB">Waiting...</pre>
+      <button class="copy-btn" onclick="copyResponse('outputB', this)">Copy</button>
     </div>
     <div>
       <h3>qwen:1.8b</h3>
       <pre id="outputC">Waiting...</pre>
+      <button class="copy-btn" onclick="copyResponse('outputC', this)">Copy</button>
     </div>
   </div>
 
