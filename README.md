@@ -113,12 +113,8 @@ Type a QA prompt and click "Compare Models".
 ---
 
 
-## 📃 License
+## 📬 Contact
 
-This project is open source under the MIT License. You can use, modify, and share it freely.
-
----
-
-## 🙌 Contribute
-
+For questions or collaboration, connect with us:
+🧪 GitHub: [aiqualitylab](https://github.com/aiqualitylab)
 Contributions are welcome! If you have ideas or improvements, feel free to open an issue or submit a pull request.
