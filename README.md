@@ -111,10 +111,3 @@ Type a QA prompt and click "Compare Models".
 </div>
 
 ---
-
-
-## 📬 Contact
-
-For questions or collaboration, connect with us:
-🧪 GitHub: [aiqualitylab](https://github.com/aiqualitylab)
-Contributions are welcome! If you have ideas or improvements, feel free to open an issue or submit a pull request.
